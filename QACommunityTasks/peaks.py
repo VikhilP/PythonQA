@@ -9,5 +9,6 @@ for i in peaks:
         temp
         for j in (peaks[i],peaks[i+5]):
             if peaks[j]>peaks[i]
+            #sds
     else:
 
