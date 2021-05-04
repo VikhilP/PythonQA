@@ -6,9 +6,11 @@ for i in peaks:
     peaksort = [peaks[0]]
     if peaks[i+5] in peaks:
         temp = []
-        temp
+        temp = [0]
         for j in (peaks[i],peaks[i+5]):
             if peaks[j]>peaks[i]
             #sds
+            #sdasdasd
+            
     else:
 
