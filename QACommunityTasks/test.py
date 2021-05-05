@@ -36,18 +36,50 @@
 # print(5%6)
 # import pytest
 
-def split(word):
-    return [char for char in word]
+# def split(word):
+#     return [char for char in word]
 
-def double_char(str):
-    temp = []
-    strlist = split(str)
-    strs = ""
-    for i in range(len(str)):
-        temp.append(strlist[i])
-        temp.append(strlist[i])
-    return strs.join(temp)
+# def double_char(str):
+#     temp = []
+#     strlist = split(str)
+#     strs = ""
+#     for i in range(len(str)):
+#         temp.append(strlist[i])
+#         temp.append(strlist[i])
+#     return strs.join(temp)
 
-print(split("feeed"))
+# print(split("feeed"))
 
-double_char("the")
+# double_char("the")
+
+
+# def count_code(str):
+#     count = 0
+  
+#     for i in range(len(str)):
+#         if str[i:i+2] == "co":
+#             if str[i+3] == "e":
+#                 count = count+1
+    
+#     return count
+
+nums = [1, 2, 3, 4, 100]
+
+def centered_average(nums):
+    nums.sort()
+    nums.pop()
+    nums.pop(0)
+  
+    count = 0
+    for i in nums:
+        count = count + i
+        
+    mid = len(nums)//2
+   
+  
+    print (count//len(nums))
+    return nums[mid]
+
+centered_average(nums)
+
+
